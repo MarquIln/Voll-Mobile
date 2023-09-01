@@ -1,103 +1,104 @@
 const section = [
     {
         id: 1,
-        title: 'Enter your basic information',
+        title: 'Insira alguns dados básicos',
         entryText: [
             {
                 id: 1,
-                label: 'Name',
-                placeholder: 'Enter your name'
+                label: 'Nome',
+                placeholder: 'Digite seu nome completo',
             },
             {
                 id: 2,
                 label: 'Email',
-                placeholder: 'Enter your email'
+                placeholder: 'Digite seu email',
             },
             {
                 id: 3,
-                label: 'Create a password',
-                placeholder: 'Enter your password',
+                label: 'Crie uma senha',
+                placeholder: 'Insira sua senha',
                 secureTextEntry: true,
             },
             {
                 id: 4,
-                label: 'Confirm your password',
-                placeholder: 'Confirm your password',
+                label: 'Confirme sua senha',
+                placeholder: 'Insira sua senha',
                 secureTextEntry: true,
-            }
+            },
         ],
-        checkbox: []
+        checkbox: [],
     },
     {
         id: 2,
-        title: 'Enter more information about you',
+        title: 'Agora, mais alguns dados sobre você:',
         entryText: [
             {
                 id: 1,
-                label: 'ZIP Code',
-                placeholder: 'Enter your ZIP Code'
+                label: 'CEP',
+                placeholder: 'Insira seu CEP',
             },
             {
                 id: 2,
-                label: 'Address',
-                placeholder: 'Enter your address'
+                label: 'Endereço',
+                placeholder: 'Insira seu endereço',
             },
             {
                 id: 3,
-                label: 'Number',
-                placeholder: 'Enter your number'
+                label: 'Número',
+                placeholder: 'Insira seu número',
             },
             {
                 id: 4,
-                label: 'Complement',
-                placeholder: 'Enter your complement'
+                label: 'Complemento',
+                placeholder: 'Insira seu complemento',
             },
             {
                 id: 5,
-                label: 'Cell Phone',
-                placeholder: '(00) 00000-0000'
-            }
+                label: 'Telefone',
+                placeholder: '(00) 00000-0000',
+            },
         ],
-        checkbox: []
+        checkbox: [],
     },
-    {            
+    {
         id: 3,
-        title: 'Which are your health plans?',
+        title: 'Para finalizar, quais são os seus planos?',
         entryText: [],
         checkbox: [
             {
                 id: 1,
-                value: 'Unimed' 
+                value: 'Sulamerica',
             },
             {
                 id: 2,
-                value: 'IPE Saude'
+                value: 'Unimed',
             },
             {
                 id: 3,
-                value: 'Bradesco'
+                value: 'Bradesco',
             },
             {
                 id: 4,
-                value: 'Amil'
+                value: 'Amil',
             },
             {
                 id: 5,
-                value: 'Sul America'
+                value: 'Biosaúde',
             },
             {
                 id: 6,
-                value: 'Bio Vida'
+                value: 'Biovida',
             },
             {
                 id: 7,
-                value: 'Outros'
+                value: 'Outros',
             },
             {
                 id: 8,
-                value: 'SUS'
-            }
-        ]
-    }
-]
-export { section }
+                value: 'Não tenho plano',
+            },
+        ],
+    },
+];
+
+export { section };

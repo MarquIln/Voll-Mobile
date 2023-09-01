@@ -1,8 +1,8 @@
-import { ITextProps, Text } from "native-base";
-import { ReactNode } from "react";
+import { ITextProps, Text } from 'native-base';
+import { ReactNode } from 'react';
 
 interface TitleProps extends ITextProps {
-    children: ReactNode
+    children: ReactNode;
 }
 
 export function TitleComponent({ children, ...rest }: TitleProps) {
@@ -17,5 +17,5 @@ export function TitleComponent({ children, ...rest }: TitleProps) {
         >
             {children}
         </Text>
-    )
+    );
 }
