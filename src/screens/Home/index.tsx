@@ -13,8 +13,10 @@ import Logo from "../../assets/Logo.png";
 import { TitleComponent } from "../../components/TitleComponent";
 import { InputComponent } from "../../components/InputComponent";
 import { ButtonComponent } from "../../components/ButtonComponent";
+import { useNavigation } from '@react-navigation/native';
 
-export default function Home() {
+export default function Home({ navigation }) {
+
     return (
         <VStack 
             flex={1} 
@@ -52,7 +54,7 @@ export default function Home() {
                 mt={8}
             >
                 <Text>Dont have account?</Text>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Register')}>
                     <Text color='blue.500'> Create yout account!</Text>
                 </TouchableOpacity>
             </Box>
