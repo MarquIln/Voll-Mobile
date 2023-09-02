@@ -35,14 +35,14 @@ export default function Home() {
                     leftIcon={<Text>#</Text>}
                 />
             </Box>
-            <ButtonComponent>Entrar</ButtonComponent>
+            <ButtonComponent onPress={() => navigation.navigate('Tabs')}>Entrar</ButtonComponent>
 
             <Link href="https://www.github.com/MarquIln" mt={4}>
                 Forgot your password?
             </Link>
 
             <Box w="100%" flexDirection="row" justifyContent={'center'} mt={8}>
-                <Text>Dont have account?</Text>
+                <Text>Dont have an account?</Text>
                 <TouchableOpacity
                     onPress={() => navigation.navigate('Register')}
                 >

@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../screens/Home';
 import Register from '../screens/Register';
+import Tabs from '../Tabs';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,12 +15,20 @@ export default function Routes() {
                 <Stack.Screen
                     name="Home"
                     component={Home}
-                    options={{ headerShown: false }}
+                    options={{ 
+                        headerShown: false }}
                 />
                 <Stack.Screen
                     name="Register"
                     component={Register}
-                    options={{ headerShown: false }}
+                    options={{ 
+                        headerShown: false }}
+                />
+                <Stack.Screen
+                    name='Tabs'
+                    component={Tabs}
+                    options={{ 
+                        headerShown: false }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
